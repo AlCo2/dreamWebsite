@@ -1,6 +1,9 @@
+
 body{
     background-color: #000000;
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
 .navbar{
     height: 20vh;
@@ -12,6 +15,8 @@ body{
     place-items: center;
     font-size: 12px;
     font-family: 'Open sans';
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .ul1{
     display: flex;
@@ -25,6 +30,7 @@ a{
     text-decoration: none;
     color: white;
     transition-duration: 300ms;
+    
 }
 a:hover{
     color: #3500d4;
@@ -57,7 +63,8 @@ a:hover{
 
 #main{
     display: grid;
-    height: 80vh;
+    height: 100vh;
+    align-items: baseline;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -92,18 +99,25 @@ a:hover{
 #texting{
     height: 300px;
 }
+
+#maintext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 #maintext p{
     font-size: 40px;
     font-family: 'Poppins';
     font-weight: bold;
     position: relative;
-    bottom: 56px;
     margin-left: 30px;
+    max-height: 330px;
+    max-width: fit-content;
 }
 #mainbtn{
     position: relative;
     margin-left: 30px;
-    bottom: 56px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -132,7 +146,6 @@ a:hover{
     height: 50vh;
     display: flex;
     width: 100%;
-    margin-top: 100px;
 }
 
 .d1{
@@ -153,4 +166,74 @@ a:hover{
     font-family: 'Poppins';
     font-weight: 700;
     
+}
+
+#main3{
+    height: 65vh;
+    background-color: #2b2b2b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ptext3{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.ptext3 button{
+    width: 140px;
+    height: 40px;
+    font-weight: 699;
+    cursor: pointer;
+    background-color: #000000;
+    color: aliceblue;
+    border-radius: 4px;
+    transition-duration: 300ms;
+}
+.ptext3 button:hover{
+    background: white;
+    color: #1a0061;
+    border: 1px solid #1a0061;
+}
+.bigp{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 430px;
+    margin-bottom: 0px;
+}
+.litlep{
+    font-weight: lighter;
+    font-family: 'Open sans';
+    max-width: 430px;
+}
+.pic3{
+    background-image: url(https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+}
+
+#main4{
+    height: 70vh;
+}
+#main4 p{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Open sans';
+    max-width: 800px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+#main4 h4{
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    margin-left: 100px;
+    margin-bottom: 3px;
+    color: #3500d4;
+}
+#main4 h6{
+    margin-left: 100px;
+    margin-top: 0px;
+    color: white;
+    font-family: 'Poppins';
 }
