@@ -1,0 +1,156 @@
+body{
+    background-color: #000000;
+    color: white;
+}
+.navbar{
+    height: 20vh;
+    width: 100%;
+}
+.navbar nav{
+    display: flex;
+    align-items: stretch;
+    place-items: center;
+    font-size: 12px;
+    font-family: 'Open sans';
+}
+.ul1{
+    display: flex;
+    gap: 30px;
+    flex-grow: 6;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 300ms;
+}
+a:hover{
+    color: #3500d4;
+}
+.ul2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#navbrand{
+    font-size: 20px;
+    font-weight: 600;
+    flex-grow: 1;
+}
+.ul2 button{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #3500d4;
+    font-weight: 699;
+    color: white;
+    border-radius: 3px;
+    transition-duration: 500ms;
+}
+.ul2 button:hover{
+    background: white;
+    color: #1a0061;
+    border: 1px solid #3500d4;
+}
+
+#main{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mainimage{
+    display: flex;
+    justify-content: end;
+}
+#image{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 30px  #1a0061;
+    background-image: url(https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/09/Why-Do-We-Dream-1333685958-770x533-1.jpg);
+    background-size: cover;
+    border-radius: 0px 0px 0px 5px;
+}
+#imagetext{
+    background-color: #1a0061;
+    border-radius: 5px 0px 5px 5px; 
+    height: 330px;
+    width: 60px;
+}
+#imagetext ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    right: 20px;
+}
+#imagetext ul li i{
+    font-size: 28px;
+}
+#texting{
+    height: 300px;
+}
+#maintext p{
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    position: relative;
+    bottom: 56px;
+    margin-left: 30px;
+}
+#mainbtn{
+    position: relative;
+    margin-left: 30px;
+    bottom: 56px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#mainbtn button{
+    width: 230px;
+    height: 40px;
+    font-weight: 699;
+    cursor: pointer;
+    background-color: #3500d4;
+    color: aliceblue;
+    border-radius: 4px;
+    transition-duration: 300ms;
+}
+#mainbtn button:hover{
+    background: white;
+    color: #1a0061;
+    border: 1px solid #3500d4;
+}
+.aintext{
+    text-decoration: underline;
+    font: 1em sans-serif;
+}
+
+#main2{
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.d1{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Open sans';
+}
+#d1{
+    background-color: #230090;
+}
+#d2{
+    background-color: #1a0061;
+}
+#d3{
+    background-color: #230090;
+}
+.pd1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    
+}
