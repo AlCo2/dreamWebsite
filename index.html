@@ -13,18 +13,23 @@
     <div class="navbar">
         <nav>
             <a id="navbrand" href=""><i class="fa-solid fa-star"></i>Dream</a>
-            <ul class="ul1">    
+            <ul id="ul1" class="ul1">    
                 <li><a href="">Why Dream <i class="fa-sharp fa-solid fa-circle-arrow-down"></i></a></li>
                 <li><a href="">What We Do <i class="fa-sharp fa-solid fa-circle-arrow-down"></i></a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Recources <i class="fa-sharp fa-solid fa-circle-arrow-down"></i></a></li>
             </ul>
-            <ul class="ul2">
+            <ul id="ul2" class="ul2">
                 <li><a href="">Need Help?</a></li>
                 <li><a href="">Login</a></li>
-                <li><a href=""><button>Sign Up</button></a></li>
+                <li><a ><button>Sign Up</button></a></li>
             </ul>
+            
         </nav>
+        <div>
+            <a id="navbtn" onclick="shownav()"><i class="fa-solid fa-bars"></i></a>
+            <a id="navbtn2" onclick="hidenav()"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
     </div>
     <div id="main">
         <div id="mainimage">
@@ -67,7 +72,7 @@
             <p class="litlep">Discover what's ahead for social marketing, commerce, and customer service.</p>
             <a href=""><button>Read The trends</button></a>
         </div>
-        <div>
+        <div id="main3hide">
             <div class="pic3"></div>
         </div>
     </div>
@@ -76,5 +81,23 @@
         <h4>Abdou Lahboub</h4>
         <h6>TheGodFather</h6>
     </div>
+    <script>
+        let navshow = document.getElementById("navbtn");
+        let ul1 = document.getElementById("ul1");
+        let ul2 = document.getElementById("ul2");
+        let navhide = document.getElementById("navbtn2");
+        function shownav(){
+            ul1.style = "display: flex;flex-direction: column;";
+            ul2.style = "display: flex;flex-direction: column;";
+            navshow.style = "display: none";
+            navhide.style = "display:inline;adding-right: 10px;";
+        }
+        function hidenav(){
+            ul1.style = "display: none";
+            ul2.style = "display: none";
+            navshow.style = "display:inline";
+            navhide.style = "display:none";
+        }
+    </script>
 </body>
 </html>

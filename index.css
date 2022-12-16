@@ -237,3 +237,97 @@ a:hover{
     color: white;
     font-family: 'Poppins';
 }
+#navbtn, #navbtn2{
+    display: none;
+}
+
+/*medium*/
+@media screen and (max-width: 830px){
+    .bigp{
+        font-size: 20px;
+    }
+    .litlep{
+        font-size: 13px;
+    }
+    #maintext p{
+        font-size: 30px;
+        
+    }
+    #mainbtn{
+        flex-direction: column;
+    }
+    #mainbtn button{
+        width: 150px;
+    }
+    #main4 p{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+/*small*/
+@media screen and (max-width: 600px){
+    #mainimage{
+        display: none;
+    }
+    #main{
+        grid-template-columns: 1fr;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+    #maintext p{
+        max-width: fit-content;
+    }
+    #main2{
+        flex-direction: column;
+        height: fit-content;
+    }
+    #main2 div{
+        width: fit-content;
+    }
+    #main2 div p{
+        max-width: fit-content;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    #main3{
+        grid-template-columns: 1fr;
+    }
+    #main3hide{
+        display: none;       
+    }
+    #navbrand{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .navbar{
+        height: fit-content;
+    }
+    nav{
+        flex-direction: column;
+        background-color: #3500d485;
+    }
+    .ul1{
+        float: none;
+        display: none;
+    }
+    .ul2{
+        float: none;
+        display: none;
+    }
+    #navbtn{
+        display: inline;
+        font-size: 25px;
+        position: absolute;
+        padding-right: 10px;
+        top: 0;
+        right: 0;
+    }
+    #navbtn2{
+        display: none;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
